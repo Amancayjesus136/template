@@ -50,6 +50,31 @@ h6 {
   transition: all 0.4s;
 }
 
+/* Estilos generales para los modales */
+.modal-body.redes-sociales {
+  text-align: center; /* Centra los iconos */
+}
+
+.modal-body.redes-sociales i {
+  font-size: 2.5em; /* Ajusta el tamaño de los iconos según sea necesario */
+  margin: 10px; /* Agrega un espacio entre los iconos */
+}
+
+/* Estilos específicos para cada red social */
+.modal-body.redes-sociales .bx.bxl-facebook {
+  color: #3b5998; /* Color de Facebook */
+}
+
+.modal-body.redes-sociales .bx.bxl-twitter {
+  color: #1da1f2; /* Color de Twitter */
+}
+
+.modal-body.redes-sociales .bx.bxl-instagram {
+  color: #e4405f; /* Color de Instagram */
+}
+
+
+
 .back-to-top i {
   font-size: 28px;
   color: #fff;
