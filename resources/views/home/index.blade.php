@@ -754,14 +754,12 @@
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
               </div>
-
             </div>
-
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-8 mt-5 mtlg-0">
+            <form id="contactForm" action="{{ route('contact.store') }}" method="post" role="form" class="php-email-form">
+            @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -781,7 +779,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="button" class="btn btn-primary" id="submitButton">Send Message</button></div>
             </form>
 
           </div>
@@ -803,5 +801,54 @@
 </body>
 
 </html>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Contacto creado exitosamente!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#submitButton').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: $('#contactForm').attr('action'),
+                data: $('#contactForm').serialize(),
+                success: function (response) {
+                    // Abre el modal de éxito
+                    $('#successModal').modal('show');
+
+                    // Cierra el modal después de 2 segundos
+                    setTimeout(function () {
+                        $('#successModal').modal('hide');
+                    }, 2000);
+
+                    // Limpia los campos del formulario
+                    $('#contactForm')[0].reset();
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        });
+    });
+</script>
+
+
 
 @endsection
