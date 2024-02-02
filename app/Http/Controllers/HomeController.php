@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        Session::flash('success', '¡Inicio de sesión exitoso!');
+        Session::flash('success_login', '¡Inicio de sesión exitoso!');
         return view('home');
     }
 }
