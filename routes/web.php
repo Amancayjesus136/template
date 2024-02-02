@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('home.index');
 });
-
-Auth::routes();
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/Inicio', [PerfilController::class, 'index'])->name('inicio.index');
+
+
+Route::middleware(['auth', 'verified'])->group(function () {
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+});
+
+// Ruta para la autenticación
+require('../config/auth.php');
+
