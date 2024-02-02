@@ -8,8 +8,8 @@
       <p>Soy <span class="typed" data-typed-items="Desarrollador de Software"></span></p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.facebook.com/amancayjesus/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/sacame_el_trago/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
@@ -31,14 +31,15 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
-            <img src="{{ asset('assets3/img/profile-img.jpg') }}" class="img-fluid" alt="">
+          <div class="col-lg-4"><br>
+          <img src="{{ asset('assets3/img/profile-img.jpg') }}" class="img-fluid oval-image" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content"><br><br>
             <h3>Junior &amp; Desarrollador Web.</h3><br><br>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nombre Completo:</strong> <span>Jesús Adrián Amancay Acuña</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>27 Noviembre 2002</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Peruana</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Celular:</strong> <span>+51 933 924 456</span></li>

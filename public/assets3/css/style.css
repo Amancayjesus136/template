@@ -50,6 +50,13 @@ h6 {
   transition: all 0.4s;
 }
 
+.oval-image {
+  border-radius: 50%; /* Hace que la imagen sea ovalada */
+  width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 100%; /* Ajusta la altura de la imagen según sea necesario */
+  object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+}
+
 /* Estilos generales para los modales */
 .modal-body.redes-sociales {
   text-align: center; /* Centra los iconos */
