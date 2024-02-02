@@ -420,7 +420,7 @@
               <li data-filter=".filter-ismem">Ismem</li>
               <li data-filter=".filter-areandina">areandina</li>
               <li data-filter=".filter-capacitate">capacitate</li>
-              <li data-filter=".filter-certiprof">certiProf</li>
+              <li data-filter=".filter-certiprof">certiprof</li>
               <li data-filter=".filter-platzi">platzi</li>
             </ul>
           </div>
@@ -428,7 +428,7 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-europeo">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-europe">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/1.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -480,7 +480,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-capacitate">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/6.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -493,7 +493,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hp">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/4.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -506,7 +506,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-certiprof">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/8.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -519,7 +519,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-europe">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/9.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -532,7 +532,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-platzi">
             <div class="portfolio-wrap">
               <img src="{{ asset('assets3/img/portfolio/7.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
