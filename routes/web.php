@@ -25,12 +25,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/Inicio', [PerfilController::class, 'index'])->name('inicio.index');
 
 
-Route::middleware(['auth', 'verified'])->group(function () {
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-});
 
-// Ruta para la autenticación
-require('../config/auth.php');
 

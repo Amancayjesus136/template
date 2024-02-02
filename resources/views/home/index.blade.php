@@ -35,7 +35,7 @@
             <img src="{{ asset('assets3/img/profile-img.jpg') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content"><br><br>
-            <h3>Dev &amp; Desarrollador Web.</h3><br><br>
+            <h3>Junior &amp; Desarrollador Web.</h3><br><br>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
@@ -407,32 +407,74 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Certificados</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-europe">europeo</li>
+              <li data-filter=".filter-hp">hp</li>
+              <li data-filter=".filter-banco">banco</li>
+              <li data-filter=".filter-ismem">Ismem</li>
+              <li data-filter=".filter-areandina">areandina</li>
+              <li data-filter=".filter-capacitate">capacitate</li>
+              <li data-filter=".filter-certiprof">certiProf</li>
+              <li data-filter=".filter-platzi">platzi</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-europeo">
             <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets3/img/portfolio/1.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Agile Management</h4>
+                <p>Instituto Europeo de Posgrado</p>
                 <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ asset('assets3/img/portfolio/1.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-areandina">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets3/img/portfolio/certificado.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Transformación Digital</h4>
+                <p>Areandina</p>
+                <div class="portfolio-links">
+                  <a href="{{ asset('assets3/img/portfolio/certificado.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ismem">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets3/img/portfolio/3.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ciberseguridad</h4>
+                <p>ISMEM</p>
+                <div class="portfolio-links">
+                  <a href="{{ asset('assets3/img/portfolio/3.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-banco">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets3/img/portfolio/5.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Certificado de curso virtual</h4>
+                <p>Mi banco</p>
+                <div class="portfolio-links">
+                  <a href="{{ asset('assets3/img/portfolio/5.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -440,41 +482,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets3/img/portfolio/6.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Gobernanza TI</h4>
+                <p>Capacitate para el empleo</p>
                 <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ asset('assets3/img/portfolio/6.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -482,55 +495,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets3/img/portfolio/4.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
+                <h4>Contratación Personal</h4>
+                <p>HP</p>
                 <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ asset('assets3/img/portfolio/4.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -538,19 +508,42 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{{ asset('assets3/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets3/img/portfolio/8.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Transformación Digital</h4>
+                <pI>Instituto Europeo de Posgrado</p>
                 <div class="portfolio-links">
-                  <a href="{{ asset('assets3/img/portfolio/portfolio-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ asset('assets3/img/portfolio/8.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-        </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets3/img/portfolio/9.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Scrum Foundation</h4>
+                <p>CertiProf</p>
+                <div class="portfolio-links">
+                  <a href="{{ asset('assets3/img/portfolio/9.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{ asset('assets3/img/portfolio/7.png') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Marca Personal</h4>
+                <p>Platzi</p>
+                <div class="portfolio-links">
+                  <a href="{{ asset('assets3/img/portfolio/7.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
       </div>
     </section><!-- End Portfolio Section -->

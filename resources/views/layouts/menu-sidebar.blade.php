@@ -38,7 +38,7 @@
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Listado</span>
+                <span class="hide-menu">Perfil</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -46,7 +46,7 @@
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
-                <span class="hide-menu">Notificaciones</span>
+                <span class="hide-menu">Habilidades</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -54,7 +54,7 @@
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Videos</span>
+                <span class="hide-menu">Certificados</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -62,7 +62,7 @@
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Documentacion</span>
+                <span class="hide-menu">Formación Academica</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -70,7 +70,7 @@
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
-                <span class="hide-menu">Info</span>
+                <span class="hide-menu">Contactos</span>
               </a>
             </li>
             
