@@ -52,6 +52,7 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Egresado</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Correo Electrónico:</strong> <span>amancayjesus136@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>DNI:</strong> <span>70922104</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Especialidad de Back-End:</strong> <span>Laravel</span></li>
                 </ul>
               </div>
             </div>
@@ -317,7 +318,7 @@
               <h4>Vibra Digital SAC</h4>
               <h5>Julio 2023 - Presente</h5>
               <ul>
-                <li>Desarrollador Web</li>
+                <li>Desarrollador Full Stack</li>
               </ul>
               <p><em>Av. la Paz 905-797, Miraflores 15074</em></p>
               
@@ -327,7 +328,7 @@
               <h4>PhenomenalB2B</h4>
               <h5>Abril 2023 - Junio 2023</h5>
               <ul>
-                <li>Desarrollador Web</li>
+                <li>Desarrollador Full Stack</li>
               </ul>
             </div>
 
@@ -872,14 +873,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="successModalLabel">Success</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 Mensaje enviado exitosamente!
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -914,7 +911,5 @@
         });
     });
 </script>
-
-
 
 @endsection

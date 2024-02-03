@@ -30,7 +30,12 @@ class ContactController extends Controller
         $contacto->update($request->all());
         return redirect()->back()->with('success', 'actualizado exitosamente');
     }
-    
+
+    public function mostrarDetalleMensaje($id)
+    {
+        $contacto = Contact::findOrFail($id);
+        return redirect()->back()->with('success', 'actualizado exitosamente');
+    }
 
     /**
      * Show the form for creating a new resource.

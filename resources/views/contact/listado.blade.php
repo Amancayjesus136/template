@@ -40,8 +40,8 @@
             <i class="ti ti-edit"></i>
           </a>
 
-          <a href="#" data-bs-toggle="modal" data-bs-target="#mensje{{ $contacto->id_project }}" class="btn btn-info btn-sm">
-          <i class="ti ti-mail-opened"></i>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#mensaje{{ $contacto->id }}" class="btn btn-info btn-sm">
+              <i class="ti ti-mail-opened"></i>
           </a>
         </td>
       </tr>
@@ -99,34 +99,33 @@
 @endforeach
 
 @foreach($contactos as $contacto)
-<div class="modal fade" id="mensje{{ $contacto->id_project }}" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitleId">
-          Ver mensaje
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-        <div class="modal-body">
-          <span>{{ $contacto->message}}</span>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Cerrar
-            </button>
-            <button type="submit" class="btn btn-primary">Guardar</button>
-        </form>
-      </div>
+<div class="modal fade" id="mensaje{{ $contacto->id }}" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Ver mensaje
+                </h5>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <span>{{ $contacto->message}}</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 @endforeach
+
 
 
 <script>
