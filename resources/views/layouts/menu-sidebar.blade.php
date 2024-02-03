@@ -164,17 +164,17 @@
           </ul>
 
           <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link nav-icon-hover" href="javascript:void(0)" onclick="mostrarNotificaciones()">
-                    <i class="ti ti-bell-ringing"></i>
-                    <div class="notification-circle bg-danger text-white rounded-circle">
-                        <span id="notificaciones-numero">
-                            {{ count($nombresContactosRecientes) }}
-                        </span>
-                    </div>
-                </a>
-            </li>
-        </ul>
+    <li class="nav-item">
+        <a class="nav-link nav-icon-hover" href="javascript:void(0)" onclick="mostrarNotificaciones()">
+            <i class="ti ti-bell-ringing"></i>
+            <div class="notification-circle bg-danger text-white rounded-circle">
+                <span id="notificaciones-numero">
+                    {{ count($nombresContactosRecientes) }}
+                </span>
+            </div>
+        </a>
+    </li>
+</ul>
 
 
           <div id="notificaciones-container" class="notificaciones-container hidden">
@@ -237,23 +237,8 @@
       <!--  Header End -->
 
       <script>
-    // Recuperar el valor del contador al cargar la página
-    window.onload = function() {
-        var storedCount = localStorage.getItem('notificacionesCount');
-        if (storedCount !== null) {
-            document.getElementById('notificaciones-numero').innerText = storedCount;
+        function mostrarNotificaciones() {
+            var notificacionesContainer = document.getElementById('notificaciones-container');
+            notificacionesContainer.classList.toggle('hidden');
         }
-    };
-
-    function mostrarNotificaciones() {
-        // Establecer el contador en 0
-        document.getElementById('notificaciones-numero').innerText = '0';
-
-        // Almacenar el valor del contador en localStorage
-        localStorage.setItem('notificacionesCount', '0');
-
-        // Tu lógica para mostrar las notificaciones
-        var notificacionesContainer = document.getElementById('notificaciones-container');
-        notificacionesContainer.classList.toggle('hidden');
-    }
-</script>
+      </script>
