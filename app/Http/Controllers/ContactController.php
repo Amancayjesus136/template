@@ -18,6 +18,20 @@ class ContactController extends Controller
         return view('contact.listado', compact('contactos', 'nombresContactosRecientes'));
     }
 
+    public function actualizar_contacto(string $id)
+    {
+        $contacto = Contact::findOrFail($id);
+        return redirect()->back()->with('success', 'Actividad actualizado exitosamente');
+    }
+
+    public function editar_contacto(Request $request, string $id)
+    {
+        $contacto = Contact::findOrFail($id);
+        $contacto->update($request->all());
+        return redirect()->back()->with('success', 'actualizado exitosamente');
+    }
+    
+
     /**
      * Show the form for creating a new resource.
      */

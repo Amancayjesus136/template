@@ -30,6 +30,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact/listado', [ContactController::class, 'listado'])->name('contact/listado.listado');
+Route::get('/contacto/editar/{id}', [ContactController::class, 'actualizar_contacto'])->name('contacto_registro.actualizar_contacto');
+Route::put('/contacto/editar/{contacto}', [ContactController::class, 'editar_contacto'])->name('contacto.editar_contacto');
+
+
 
 
 
