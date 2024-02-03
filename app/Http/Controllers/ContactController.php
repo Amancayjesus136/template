@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Support\Carbon;
 
 class ContactController extends Controller
 {
@@ -12,8 +13,9 @@ class ContactController extends Controller
      */
     public function listado()
     {
+        $nombresContactosRecientes = Contact::where('estado', 0)->pluck('name');
         $contactos = Contact::all();
-        return view('contact.listado', compact('contactos'));
+        return view('contact.listado', compact('contactos', 'nombresContactosRecientes'));
     }
 
     /**

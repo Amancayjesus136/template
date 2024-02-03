@@ -1,4 +1,42 @@
 <body>
+  @php
+    use App\Models\Contact;
+    $nombresContactosRecientes = Contact::where('estado', 0)->pluck('name');
+  @endphp
+  
+  <style>
+    .hidden {
+    display: none;
+    }
+
+    .notificaciones-container {
+        position: absolute;
+        top: 50px; /* Ajusta la posición según tu diseño */
+        right: 1400px;
+        width: 200px; /* Ajusta el ancho según tu diseño */
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .notificacion {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .notification-circle {
+    width: 20px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#notificaciones-numero {
+    font-size: 12px; /* Ajusta el tamaño del número dentro del círculo */
+}
+
+  </style>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
@@ -123,14 +161,39 @@
                 <i class="ti ti-menu-2"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
           </ul>
-          
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" onclick="mostrarNotificaciones()">
+                    <i class="ti ti-bell-ringing"></i>
+                    <div class="notification-circle bg-danger text-white rounded-circle">
+                        <span id="notificaciones-numero">
+                            {{ count($nombresContactosRecientes) }}
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+
+          <div id="notificaciones-container" class="notificaciones-container hidden">
+              @if(count($nombresContactosRecientes) > 0)
+                  <a href="{{ route('contact/listado.listado') }}" style="text-decoration: none; color: inherit;">
+                      @foreach($nombresContactosRecientes as $nombre)
+                          <div class="notificacion">
+                              <i class="ti ti-message"></i> <strong>{{ $nombre }}</strong>: <br> te mando un mensaje
+                          </div>
+                      @endforeach
+                  </a>
+              @else
+                  <div class="notificacion">
+                      No hay notificaciones.
+                  </div>
+              @endif
+          </div>
+
+
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
               <a target="_blank" class="btn btn-primary">¡Bienvenid@ {{ Auth::user()->name }}!</a>
@@ -172,3 +235,25 @@
         </nav>
       </header>
       <!--  Header End -->
+
+      <script>
+    // Recuperar el valor del contador al cargar la página
+    window.onload = function() {
+        var storedCount = localStorage.getItem('notificacionesCount');
+        if (storedCount !== null) {
+            document.getElementById('notificaciones-numero').innerText = storedCount;
+        }
+    };
+
+    function mostrarNotificaciones() {
+        // Establecer el contador en 0
+        document.getElementById('notificaciones-numero').innerText = '0';
+
+        // Almacenar el valor del contador en localStorage
+        localStorage.setItem('notificacionesCount', '0');
+
+        // Tu lógica para mostrar las notificaciones
+        var notificacionesContainer = document.getElementById('notificaciones-container');
+        notificacionesContainer.classList.toggle('hidden');
+    }
+</script>

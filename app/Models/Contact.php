@@ -4,11 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
 
 class Contact extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     protected $table = 'contactos'; 
 
@@ -17,6 +16,7 @@ class Contact extends Model
         'email',
         'subject',
         'message',
+        'estado',
     ];
 }
 
